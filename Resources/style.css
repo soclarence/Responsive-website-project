@@ -1,55 +1,140 @@
 body {
     font-family: 'Work Sans', sans-serif;
     background-color: #E3EEF8;
+    padding: 10px;
 }
 
-.hero {
-    display: block;
-    text-align: center;
-    margin-top: 7rem;
-}
-
-.sub-header {
-    font-size: 9pt;
-    color: #666666;
-}
-
-.form {
-    display: flex;
-    justify-content: center;
+/* Hero mobile */
+@media screen and (min-width: 375px) {
+    .hero {
+        display: block;
+        text-align: center;
+        margin-top: 7rem;
+    }
     
+    .sub-header {
+        font-size: 9pt;
+        color: #666666;
+        margin-bottom: 30px;
+    }
+    
+    .header {
+        font-size: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    } 
+    
+    #email {
+        width: 180px;
+        height: 50px;
+        border: none;
+        padding-left: 10px;
+        background-color: #EEF4F5;
+    }
+    
+    #button {
+        width: 120px;
+        height: 50px;
+        border: none;
+        background-color: #FC593B;
+        color: white;
+        cursor: pointer;
+    }
 }
 
-#email {
-    width: 200px;
-    height: 40px;
-    border: none;
-    padding-left: 10px;
-    background-color: #EEF4F5;
+/* hero desktop */
+@media screen and (min-width: 1000px) {
+    .hero {
+        display: block;
+        text-align: center;
+        margin-top: 7rem;
+    }
+    
+    .sub-header {
+        font-size: 9pt;
+        color: #666666;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }   
+
+    #email {
+        width: 200px;
+        height: 40px;
+        border: none;
+        padding-left: 10px;
+        background-color: #EEF4F5;
+    }
+    
+    #button {
+        width: 120px;
+        height: 40px;
+        border: none;
+        background-color: #FC593B;
+        color: white;
+        cursor: pointer;
+    }
 }
 
-#button {
-    width: 120px;
-    height: 40px;
-    border: none;
-    background-color: #FC593B;
-    color: white;
+#button:hover {
+    background-color: #FF816A;
+    border-radius: 10px;
 }
 
 
-@media screen and (min-width: 576px) {
+
+
+
+/* abilities */
+
+@media screen and (min-width: 1000px) {
     #ability {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 3em;
         padding-left: 15%;
         padding-right: 15%;
+        padding-top: 10%;
         font-size: 11px;
+    
+        
+    
     }
 }
 
 
-@media screen and (min-width: 576px) {
+
+
+/* block 1 mobile */
+@media screen and (min-width: 300px) {
+    .block-1 {
+        display: grid;
+        grid-template-columns: 1fr 6.5fr;
+        align-items: flex-start;
+        
+    
+    }
+
+    .pencil {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* block 1 desktop */
+@media screen and (min-width: 1000px) {
     .block-1 {
         display: flex;
         flex-direction: row;
@@ -64,10 +149,88 @@ body {
     }
 }
 
+
+
+/* block 2 mobile */
+@media screen and (min-width: 300px) {
+    .block-2 {
+        display: grid;
+        grid-template-columns: 1fr 6.5fr;
+        align-items: flex-start;
+        
+    
+    }
+
+    .layers {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* block 2 desktop */
+@media screen and (min-width: 1000px) {
+    .block-2 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    
+    }
+
+    .layers {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+
+/* block 2 mobile */
+@media screen and (min-width: 300px) {
+    .block-3 {
+        display: grid;
+        grid-template-columns: 1fr 6.5fr;
+        align-items: flex-start;
+        
+    
+    }
+
+    .responsive {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* block 3 desktop */
+@media screen and (min-width: 1000px) {
+    .block-3 {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    
+    }
+
+    .responsive {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
 .block-head {
-    font-weight: bold;
+    font-weight: 600;
+    padding: 0px;
+    margin-top: -3px;
 }
 
 .block-body {
     color: #6C6C6D;
+    
 }
